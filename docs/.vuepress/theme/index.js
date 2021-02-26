@@ -12,7 +12,10 @@ module.exports = (themeConfig, ctx) => {
               dirname: '_post',
               path: '/'
             }
-          ]
+          ],
+          globalPagination: {
+            lengthPerPage: 5,
+          }
         }
       ]
     ]
