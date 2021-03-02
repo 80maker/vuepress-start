@@ -11,6 +11,7 @@
 <script>
 import { Pagination } from '@vuepress/plugin-blog/lib/client/components';
 export default {
+  name: 'Home',
   components: {
     Pagination
   }

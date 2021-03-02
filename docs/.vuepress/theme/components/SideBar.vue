@@ -7,6 +7,7 @@
 <script>
 import FooterBar from './FooterBar'
 export default {
+  name: 'SideBar',
   components: {
     FooterBar
   }
