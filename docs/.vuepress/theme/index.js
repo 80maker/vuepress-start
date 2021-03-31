@@ -32,9 +32,9 @@ module.exports = (themeConfig, ctx) => {
               path: '/categories/',
               frontmatter: { title: 'Category' },
               pagination: {
-                lengthPerPage: 10,
-                prevText: '',
-                nextText: ''
+                lengthPerPage: 2,
+                prevText: '上一页',
+                nextText: '下一页'
               }
             }
           ]

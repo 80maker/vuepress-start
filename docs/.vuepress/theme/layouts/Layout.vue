@@ -3,6 +3,8 @@
     <SideBar/>
     <Post v-if="$page.pid === 'post'"/>
     <Archive v-else-if="$page.pageType === 'archive'"/>
+    <Category v-else-if="$page.pageType === 'category'" />
+    <CategoryItem v-else-if="$page.pageType === 'categoryItem'" />
     <Home v-else />
     <SvgSprite/>
   </div>
@@ -10,6 +12,8 @@
 <script>
 import Post from '../components/Post'
 import Archive from '../components/Archive'
+import Category from '../components/Category'
+import CategoryItem from '../components/CategoryItem'
 import Home from '../components/Home'
 import SideBar from '../components/SideBar'
 import SvgSprite from '../components/SvgSprite.vue'
@@ -18,6 +22,8 @@ export default {
   components: {
     Home,
     Archive,
+    Category,
+    CategoryItem,
     SideBar,
     Post,
     SvgSprite

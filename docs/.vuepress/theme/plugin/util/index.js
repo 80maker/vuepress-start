@@ -9,6 +9,10 @@ module.exports = {
   extendPageData($page) {
     if ($page.path === '/archives/') {
       return $page.pageType = 'archive';
+    } else if ($page.path === '/categories/') {
+      return $page.pageType = 'category';
+    } else if (/^\/categories\/\w/.test($page.path)) {
+      return $page.pageType = 'categoryItem';
     }
   },
   additionalPages() {
