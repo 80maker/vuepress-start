@@ -23,7 +23,9 @@ module.exports = (themeConfig, ctx) => {
               path: '/tags/',
               frontmatter: { title: 'Tag' },
               pagination: {
-                lengthPerPage: 10
+                lengthPerPage: 2,
+                prevText: '上一页',
+                nextText: '下一页'
               }
             },
             {
